@@ -10,9 +10,9 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 //		features = "classpath:features",
 		features = "src/resources/features/scenarioA.feature",
-		plugin = {"pretty", "html:target/cucumber-html-report"},
+		plugin = {"pretty", "html:target/cucumber-html-report", "json:results/cucumber.json",
+		"junit:results/cucumber.xml"},
 		tags = {}
-//		tags = {"@smoke"}
 		)
 public class RunCukesTest{
 	

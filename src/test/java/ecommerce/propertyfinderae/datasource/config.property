@@ -1,0 +1,4 @@
+URL=https://www.propertyfinder.qa/
+chromeDriver=libs/chromedriver
+firefoxDriver=libs/geckodriver
+phantomjs=./libs/phantomjs

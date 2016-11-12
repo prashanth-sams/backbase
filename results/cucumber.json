@@ -1,0 +1,83 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1817808030,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CucumberHooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "First scenario",
+        "description": "",
+        "id": "search-for-villa;first-scenario",
+        "after": [
+          {
+            "result": {
+              "duration": 77040314,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CucumberHooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 11389177703,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I open the url \"https://www.propertyfinder.qa/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://www.propertyfinder.qa/",
+                  "offset": 16
+                }
+              ],
+              "location": "PropertyFinderStepDefs.open_url(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 14239753,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I validate the page title and URL",
+            "match": {
+              "location": "PropertyFinderStepDefs.validate_the_page_title_and_URL()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "I select \"VILLA\" from \"\" field",
+            "match": {},
+            "keyword": "When "
+          }
+        ]
+      }
+    ],
+    "name": "Search for VILLA",
+    "description": "",
+    "id": "search-for-villa",
+    "keyword": "Feature",
+    "uri": "src/resources/features/scenarioA.feature"
+  }
+]
