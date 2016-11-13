@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="1" tests="1" time="13.298266">
-<testcase classname="Search for VILLA" name="First scenario" time="13.298266">
-<skipped><![CDATA[When I open the url "https://www.propertyfinder.qa/"........................passed
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="16.879187">
+<testcase classname="Search for VILLA" name="First scenario" time="16.879187">
+<system-out><![CDATA[When I open the page url....................................................passed
 Then I validate the page title and URL......................................passed
-When I select "VILLA" from "" field.........................................undefined
-]]></skipped>
+When I select "Buy" from "Category" field...................................passed
+]]></system-out>
 </testcase>
 </testsuite>

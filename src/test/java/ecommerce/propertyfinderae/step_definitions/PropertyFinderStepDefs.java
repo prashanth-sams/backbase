@@ -7,13 +7,14 @@ import org.openqa.selenium.WebDriver;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import ecommerce.propertyfinderae.helpers.*;
+import ecommerce.propertyfinderae.pageobjects.*;
 
 //import ecommerce.propertyfinderae.pageobjects.PFHomePage;
 
 public class PropertyFinderStepDefs{
     public WebDriver driver;
     public configProperty config;
-//    private PFHomePage homepage;
+    public PFHomePage page;
     
     public PropertyFinderStepDefs()
     {
@@ -21,7 +22,7 @@ public class PropertyFinderStepDefs{
     }
     
     @When("^I open the page url$")
-    public void open_url(String url) throws Throwable {
+    public void open_url() throws Throwable {
     	config = new configProperty();
         driver.get(config.getPageURL());
     }
@@ -32,11 +33,12 @@ public class PropertyFinderStepDefs{
       assertEquals("https://www.propertyfinder.qa/", driver.getCurrentUrl());
     }
     
-//    @When("^I select \"([^\"]*)\" from \"([^\"]*)\" field$")
-//    public void select_from_field(String arg1, String arg2) throws Throwable {
-//
-//        homepage = new PFHomePage();
-//        homepage.selectValue();
-//    }
+    @When("^I select \"([^\"]*)\" from \"([^\"]*)\" field$")
+    public void select_from_field(String val, String Field) throws Throwable {
+
+        page = new PFHomePage(driver);
+        page.selectValue(val, Field);
+        
+    }
     
 }

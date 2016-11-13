@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 1817808030,
+              "duration": 2559814060,
               "status": "passed"
             },
             "match": {
@@ -21,7 +21,7 @@
         "after": [
           {
             "result": {
-              "duration": 77040314,
+              "duration": 87634660,
               "status": "passed"
             },
             "match": {
@@ -34,25 +34,19 @@
         "steps": [
           {
             "result": {
-              "duration": 11389177703,
+              "duration": 13876152369,
               "status": "passed"
             },
             "line": 4,
-            "name": "I open the url \"https://www.propertyfinder.qa/\"",
+            "name": "I open the page url",
             "match": {
-              "arguments": [
-                {
-                  "val": "https://www.propertyfinder.qa/",
-                  "offset": 16
-                }
-              ],
-              "location": "PropertyFinderStepDefs.open_url(String)"
+              "location": "PropertyFinderStepDefs.open_url()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 14239753,
+              "duration": 13246621,
               "status": "passed"
             },
             "line": 5,
@@ -64,11 +58,24 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 342339041,
+              "status": "passed"
             },
             "line": 6,
-            "name": "I select \"VILLA\" from \"\" field",
-            "match": {},
+            "name": "I select \"Buy\" from \"Category\" field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Buy",
+                  "offset": 10
+                },
+                {
+                  "val": "Category",
+                  "offset": 21
+                }
+              ],
+              "location": "PropertyFinderStepDefs.select_from_field(String,String)"
+            },
             "keyword": "When "
           }
         ]
