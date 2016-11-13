@@ -8,6 +8,7 @@ Tools, Frameworks and Techniques used
 - Cross browser capabilities - Chrome, Firefox, Phantomjs (headless mode)
 - Screenshots on failure 
 - read parameter from Property file
+- output array of list in CSV file
 
 
 MAC version for Drivers used
@@ -35,11 +36,8 @@ To run
 Output | Results Location 
 =============
 
-##html and screenshots
+html and screenshots
 `./target`
 
-##json
-`./results`
-
-##xml
+json, xml, csv
 `./results`

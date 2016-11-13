@@ -1,8 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="16.879187">
-<testcase classname="Search for VILLA" name="First scenario" time="16.879187">
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="18.937543">
+<testcase classname="Search for VILLA" name="First scenario" time="18.937543">
 <system-out><![CDATA[When I open the page url....................................................passed
 Then I validate the page title and URL......................................passed
 When I select "Buy" from "Category" field...................................passed
+And I search "Pearl" in "Location" field....................................passed
+And I select "Villa" from "Property" field..................................passed
+And I select "3 BEDS" from "Minimum_Bedroom_Group" field....................passed
+And I select "7 BEDS" from "Maximum_bedroom_Group" field....................passed
+When I click on "search" button.............................................passed
+And I select "HighPrice" from "Sorting" field...............................passed
+Then I fetch all the prices of the listing and save it in csv file..........passed
 ]]></system-out>
 </testcase>
 </testsuite>

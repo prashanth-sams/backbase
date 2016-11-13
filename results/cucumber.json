@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 2559814060,
+              "duration": 2343128690,
               "status": "passed"
             },
             "match": {
@@ -21,7 +21,7 @@
         "after": [
           {
             "result": {
-              "duration": 87634660,
+              "duration": 131617173,
               "status": "passed"
             },
             "match": {
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 13876152369,
+              "duration": 7592409987,
               "status": "passed"
             },
             "line": 4,
@@ -46,7 +46,7 @@
           },
           {
             "result": {
-              "duration": 13246621,
+              "duration": 12567756,
               "status": "passed"
             },
             "line": 5,
@@ -58,7 +58,7 @@
           },
           {
             "result": {
-              "duration": 342339041,
+              "duration": 166905549,
               "status": "passed"
             },
             "line": 6,
@@ -77,6 +77,146 @@
               "location": "PropertyFinderStepDefs.select_from_field(String,String)"
             },
             "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 976577750,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I search \"Pearl\" in \"Location\" field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Pearl",
+                  "offset": 10
+                },
+                {
+                  "val": "Location",
+                  "offset": 21
+                }
+              ],
+              "location": "PropertyFinderStepDefs.search_in_field(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 185600340,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I select \"Villa\" from \"Property\" field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Villa",
+                  "offset": 10
+                },
+                {
+                  "val": "Property",
+                  "offset": 23
+                }
+              ],
+              "location": "PropertyFinderStepDefs.select_from_field(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 174587083,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I select \"3 BEDS\" from \"Minimum_Bedroom_Group\" field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3 BEDS",
+                  "offset": 10
+                },
+                {
+                  "val": "Minimum_Bedroom_Group",
+                  "offset": 24
+                }
+              ],
+              "location": "PropertyFinderStepDefs.select_from_field(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 198440650,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I select \"7 BEDS\" from \"Maximum_bedroom_Group\" field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "7 BEDS",
+                  "offset": 10
+                },
+                {
+                  "val": "Maximum_bedroom_Group",
+                  "offset": 24
+                }
+              ],
+              "location": "PropertyFinderStepDefs.select_from_field(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3866136206,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I click on \"search\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "search",
+                  "offset": 12
+                }
+              ],
+              "location": "PropertyFinderStepDefs.click_on_button(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 148762317,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I select \"HighPrice\" from \"Sorting\" field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "HighPrice",
+                  "offset": 10
+                },
+                {
+                  "val": "Sorting",
+                  "offset": 27
+                }
+              ],
+              "location": "PropertyFinderStepDefs.select_from_field(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3140809661,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I fetch all the prices of the listing and save it in csv file",
+            "match": {
+              "location": "PropertyFinderStepDefs.fetch_all_the_prices_of_the_listing_and_save_it_in_csv_file()"
+            },
+            "keyword": "Then "
           }
         ]
       }

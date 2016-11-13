@@ -40,7 +40,7 @@ public class genericFunctions {
             wait = new WebDriverWait(driver, 15);
             wait.until(ExpectedConditions.elementToBeClickable(selector));
         } catch (Exception e) {
-//            throw new TestException("The following element is not clickable: " + selector);
+        	throw new NoSuchElementException(String.format("The following element was not available ", selector));
         }
     }
 	
@@ -50,9 +50,43 @@ public class genericFunctions {
         try {
             element.click();
         } catch (Exception e) {
-//            throw new TestException(String.format("The following element is not clickable: [%s]", selector));
+        	throw new NoSuchElementException(String.format("The following element was not available ", selector));
         }
 	}
 
+	public void waitForElementTextToBeEmpty(WebElement element) {
+        String text;
+        try {
+            text = element.getText();
+            int maxRetries = 10;
+            int retry = 0;
+            while ((text.length() >= 1) || (retry < maxRetries)) {
+                retry++;
+                text = element.getText();
+            }
+        } catch (Exception e) {
+        	throw new NoSuchElementException(String.format("The following element was not available ", element));
+        }
+
+    }
 	
+	public void clearField(WebElement element) {
+        try {
+            element.clear();
+            waitForElementTextToBeEmpty(element);
+        } catch (Exception e) {
+        	throw new NoSuchElementException(String.format("The following element was not available ", element));
+        }
+    }
+	
+    public void sendKeys(By selector, String value) {
+        WebElement element = getElement(selector);
+        clearField(element);
+        try {
+            element.sendKeys(value);
+        } catch (Exception e) {
+        	throw new NoSuchElementException(String.format("The following element was not available ", selector));
+        }
+    }
+    
 }
