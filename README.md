@@ -9,6 +9,7 @@ Tools, Frameworks and Techniques used
 - Screenshots on failure 
 - read parameter from Property file
 - output array of list in CSV file
+- output array of string in text file
 
 
 MAC version for Drivers used
@@ -36,8 +37,8 @@ To run
 Output | Results Location 
 =============
 
-html and screenshots
+html and failure_screenshots
 `./target`
 
-json, xml, csv
+json, xml, csv, txt, screenshots
 `./results`
