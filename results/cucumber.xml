@@ -1,15 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="18.937543">
-<testcase classname="Search for VILLA" name="First scenario" time="18.937543">
-<system-out><![CDATA[When I open the page url....................................................passed
-Then I validate the page title and URL......................................passed
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="62.888291">
+<testcase classname="Property Finder Qatar and UAE" name="First scenario" time="20.63479">
+<system-out><![CDATA[When I open the page url "propertyfinder.qa"................................passed
+Then I validate the page title and URL "propertyfinder.qa"..................passed
 When I select "Buy" from "Category" field...................................passed
 And I search "Pearl" in "Location" field....................................passed
 And I select "Villa" from "Property" field..................................passed
 And I select "3 BEDS" from "Minimum_Bedroom_Group" field....................passed
 And I select "7 BEDS" from "Maximum_bedroom_Group" field....................passed
-When I click on "search" button.............................................passed
+When I click on "search" link...............................................passed
 And I select "HighPrice" from "Sorting" field...............................passed
 Then I fetch all the prices of the listing and save it in csv file..........passed
+]]></system-out>
+</testcase>
+<testcase classname="Property Finder Qatar and UAE" name="Second scenario" time="18.684667">
+<system-out><![CDATA[When I open the page url "propertyfinder.ae"................................passed
+Then I validate the page title and URL "propertyfinder.ae"..................passed
+When I click on "Find agent" link...........................................passed
+And I filter Hindi English Arabic from Languages field......................passed
+When I click on "searchFA" link.............................................passed
+Then I get the total number of "Combined" agents............................passed
+And I select "India" from "Nationality" field...............................passed
+Then I get the total number of "Indian" agents..............................passed
+Then I validate the current agents to be in lesser number than previous.....passed
+]]></system-out>
+</testcase>
+<testcase classname="Property Finder Qatar and UAE" name="Third scenario" time="23.568834">
+<system-out><![CDATA[When I open the page url "propertyfinder.ae"................................passed
+Then I validate the page title and URL "propertyfinder.ae"..................passed
+When I click on "Find agent" link...........................................passed
+Then I click on "First agent" link..........................................passed
+And I capture the First Agent details in a text file........................passed
+Then I capture screenshot of the page "before" changing language............passed
+Then I click on "Arabic language" link......................................passed
+Then I capture screenshot of the page "after" changing language.............passed
 ]]></system-out>
 </testcase>
 </testsuite>

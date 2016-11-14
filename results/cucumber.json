@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 2343128690,
+              "duration": 2181150969,
               "status": "passed"
             },
             "match": {
@@ -17,11 +17,11 @@
         "line": 3,
         "name": "First scenario",
         "description": "",
-        "id": "search-for-villa;first-scenario",
+        "id": "property-finder-qatar-and-uae;first-scenario",
         "after": [
           {
             "result": {
-              "duration": 131617173,
+              "duration": 85191868,
               "status": "passed"
             },
             "match": {
@@ -34,31 +34,43 @@
         "steps": [
           {
             "result": {
-              "duration": 7592409987,
+              "duration": 8256825241,
               "status": "passed"
             },
             "line": 4,
-            "name": "I open the page url",
+            "name": "I open the page url \"propertyfinder.qa\"",
             "match": {
-              "location": "PropertyFinderStepDefs.open_url()"
+              "arguments": [
+                {
+                  "val": "propertyfinder.qa",
+                  "offset": 21
+                }
+              ],
+              "location": "PropertyFinderStepDefs.open_url(String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 12567756,
+              "duration": 13578069,
               "status": "passed"
             },
             "line": 5,
-            "name": "I validate the page title and URL",
+            "name": "I validate the page title and URL \"propertyfinder.qa\"",
             "match": {
-              "location": "PropertyFinderStepDefs.validate_the_page_title_and_URL()"
+              "arguments": [
+                {
+                  "val": "propertyfinder.qa",
+                  "offset": 35
+                }
+              ],
+              "location": "PropertyFinderStepDefs.validate_the_page_title_and_URL(String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 166905549,
+              "duration": 168637231,
               "status": "passed"
             },
             "line": 6,
@@ -80,7 +92,7 @@
           },
           {
             "result": {
-              "duration": 976577750,
+              "duration": 3076293791,
               "status": "passed"
             },
             "line": 7,
@@ -102,7 +114,7 @@
           },
           {
             "result": {
-              "duration": 185600340,
+              "duration": 243888398,
               "status": "passed"
             },
             "line": 8,
@@ -124,7 +136,7 @@
           },
           {
             "result": {
-              "duration": 174587083,
+              "duration": 226181013,
               "status": "passed"
             },
             "line": 9,
@@ -146,7 +158,7 @@
           },
           {
             "result": {
-              "duration": 198440650,
+              "duration": 182093981,
               "status": "passed"
             },
             "line": 10,
@@ -168,11 +180,11 @@
           },
           {
             "result": {
-              "duration": 3866136206,
+              "duration": 3327496044,
               "status": "passed"
             },
             "line": 11,
-            "name": "I click on \"search\" button",
+            "name": "I click on \"search\" link",
             "match": {
               "arguments": [
                 {
@@ -186,7 +198,7 @@
           },
           {
             "result": {
-              "duration": 148762317,
+              "duration": 2689264252,
               "status": "passed"
             },
             "line": 12,
@@ -208,7 +220,7 @@
           },
           {
             "result": {
-              "duration": 3140809661,
+              "duration": 184189233,
               "status": "passed"
             },
             "line": 13,
@@ -219,11 +231,367 @@
             "keyword": "Then "
           }
         ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1308330111,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CucumberHooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Second scenario",
+        "description": "",
+        "id": "property-finder-qatar-and-uae;second-scenario",
+        "after": [
+          {
+            "result": {
+              "duration": 138132892,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CucumberHooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8189998303,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I open the page url \"propertyfinder.ae\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "propertyfinder.ae",
+                  "offset": 21
+                }
+              ],
+              "location": "PropertyFinderStepDefs.open_url(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 14390526,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I validate the page title and URL \"propertyfinder.ae\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "propertyfinder.ae",
+                  "offset": 35
+                }
+              ],
+              "location": "PropertyFinderStepDefs.validate_the_page_title_and_URL(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1900271804,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I click on \"Find agent\" link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Find agent",
+                  "offset": 12
+                }
+              ],
+              "location": "PropertyFinderStepDefs.click_on_button(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 345424489,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I filter Hindi English Arabic from Languages field",
+            "match": {
+              "location": "PropertyFinderStepDefs.filter_Hindi_English_Arabic_from_Languages_field()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 91145306,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I click on \"searchFA\" link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "searchFA",
+                  "offset": 12
+                }
+              ],
+              "location": "PropertyFinderStepDefs.click_on_button(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3503978091,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I get the total number of \"Combined\" agents",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Combined",
+                  "offset": 27
+                }
+              ],
+              "location": "PropertyFinderStepDefs.get_the_total_number_of_agents(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 166252829,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I select \"India\" from \"Nationality\" field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "India",
+                  "offset": 10
+                },
+                {
+                  "val": "Nationality",
+                  "offset": 23
+                }
+              ],
+              "location": "PropertyFinderStepDefs.select_from_field(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3026631189,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I get the total number of \"Indian\" agents",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Indian",
+                  "offset": 27
+                }
+              ],
+              "location": "PropertyFinderStepDefs.get_the_total_number_of_agents(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 111435,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I validate the current agents to be in lesser number than previous",
+            "match": {
+              "location": "PropertyFinderStepDefs.validate_the_current_agents_to_be_in_lesser_number_than_previous()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1317477983,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CucumberHooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "Third scenario",
+        "description": "",
+        "id": "property-finder-qatar-and-uae;third-scenario",
+        "after": [
+          {
+            "result": {
+              "duration": 132419933,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CucumberHooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9669484442,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I open the page url \"propertyfinder.ae\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "propertyfinder.ae",
+                  "offset": 21
+                }
+              ],
+              "location": "PropertyFinderStepDefs.open_url(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 10484127,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I validate the page title and URL \"propertyfinder.ae\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "propertyfinder.ae",
+                  "offset": 35
+                }
+              ],
+              "location": "PropertyFinderStepDefs.validate_the_page_title_and_URL(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1817325664,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I click on \"Find agent\" link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Find agent",
+                  "offset": 12
+                }
+              ],
+              "location": "PropertyFinderStepDefs.click_on_button(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 89535785,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I click on \"First agent\" link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "First agent",
+                  "offset": 12
+                }
+              ],
+              "location": "PropertyFinderStepDefs.click_on_button(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3465736797,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I capture the First Agent details in a text file",
+            "match": {
+              "location": "PropertyFinderStepDefs.capture_the_First_Agent_details_in_a_text_file()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2408326191,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I capture screenshot of the page \"before\" changing language",
+            "match": {
+              "arguments": [
+                {
+                  "val": "before",
+                  "offset": 34
+                }
+              ],
+              "location": "PropertyFinderStepDefs.capture_screenshot_of_the_page_changing_language(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2401809134,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I click on \"Arabic language\" link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Arabic language",
+                  "offset": 12
+                }
+              ],
+              "location": "PropertyFinderStepDefs.click_on_button(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2256234160,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I capture screenshot of the page \"after\" changing language",
+            "match": {
+              "arguments": [
+                {
+                  "val": "after",
+                  "offset": 34
+                }
+              ],
+              "location": "PropertyFinderStepDefs.capture_screenshot_of_the_page_changing_language(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
       }
     ],
-    "name": "Search for VILLA",
+    "name": "Property Finder Qatar and UAE",
     "description": "",
-    "id": "search-for-villa",
+    "id": "property-finder-qatar-and-uae",
     "keyword": "Feature",
     "uri": "src/resources/features/scenarioA.feature"
   }

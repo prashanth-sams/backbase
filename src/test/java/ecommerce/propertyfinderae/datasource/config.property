@@ -1,4 +1,7 @@
-URL=https://www.propertyfinder.qa/
+PropertyfinderqaURL=https://www.propertyfinder.qa/
+PropertyfinderaeURL=https://www.propertyfinder.ae/
+PFqaTitle=propertyfinder.qa - Qatar's #1 property site
+PFaeTitle=propertyfinder.ae - UAE's #1 property site
 chromeDriver=libs/chromedriver
 firefoxDriver=libs/geckodriver
 phantomjs=./libs/phantomjs

@@ -2,10 +2,16 @@ package ecommerce.propertyfinderae.helpers;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.io.File;
+
+import org.apache.commons.lang3.StringUtils;
 
 public class genericFunctions {
 	public WebDriver driver;
@@ -88,5 +94,26 @@ public class genericFunctions {
         	throw new NoSuchElementException(String.format("The following element was not available ", selector));
         }
     }
+    
+    public String getElementText(By selector) {
+        waitUntilElementIsDisplayedOnScreen(selector);
+        try {
+            return StringUtils.trim(driver.findElement(selector).getText());
+        } catch (Exception e) {
+            System.out.println(String.format("Element %s does not exist - proceeding", selector));
+        }
+        return null;
+    }
+    
+    public void waitUntilElementIsDisplayedOnScreen(By selector) {
+        try {
+            wait = new WebDriverWait(driver, 15);
+            wait.until(ExpectedConditions.visibilityOfElementLocated(selector));
+        } catch (Exception e) {
+            throw new NoSuchElementException(String.format("The following element was not visible: %s ", selector));
+        }
+    }
+    
+    
     
 }

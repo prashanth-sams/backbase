@@ -40,10 +40,16 @@ public class configProperty {
 		return path;
 	}
 	
-	public String getPageURL () {
-		String path = property.getProperty("URL");
+	public String getPageURL (String URL) {
+		String path = property.getProperty(URL);
 		
 		return path;
+	}
+
+	public String getPageTitle(String Title) {
+		String title = property.getProperty(Title);
+		
+		return title;
 	}
 	
 	
