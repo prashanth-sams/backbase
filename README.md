@@ -5,21 +5,16 @@ Tools, Frameworks and Techniques used
 - Maven
 - Cucumber
 - PageObjectPattern
-- Cross browser capabilities - Chrome, Firefox, Phantomjs (headless mode)
-- Screenshots on failure 
-- read parameter from Property file
-- output array of list in CSV file
-- output array of string in text file
-
+- Cross browser capabilities - Chrome, Phantomjs (headless mode)
+- Screenshots on failure
+- Property file as datasource
+- Reports in html, json and xml formats 
 
 MAC version for Drivers used
 =============
 
-ChromDriver 
-https://chromedriver.storage.googleapis.com/index.html?path=2.25/
-
-FirefoxDriver
-https://github.com/mozilla/geckodriver/releases
+ChromeDriver 
+https://chromedriver.storage.googleapis.com/index.html?path=2.31/
 
 Phantomjs
 http://phantomjs.org/download.html
@@ -30,7 +25,6 @@ To run
 
     mvn clean
     mvn -DBROWSER=chrome install
-    mvn -DBROWSER=firefox install
     mvn -DBROWSER=phamtomjs install
 
 

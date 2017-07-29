@@ -1,0 +1,10 @@
+computer-db=http://computer-database.herokuapp.com/computers
+add-computer=http://computer-database.herokuapp.com/computers/new
+HomepageTitle=Computers database
+computer-name=MachineQA
+introduced-date=2000-12-24
+discontinued-date=2019-12-30
+updated-computer-name=MachineDEV
+chromeDriver=libs/chromedriver
+firefoxDriver=libs/geckodriver
+phantomjs=./libs/phantomjs

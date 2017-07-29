@@ -3,230 +3,286 @@
     "line": 1,
     "elements": [
       {
-        "before": [
-          {
-            "result": {
-              "duration": 2181150969,
-              "status": "passed"
-            },
-            "match": {
-              "location": "CucumberHooks.openBrowser()"
-            }
-          }
-        ],
         "line": 3,
-        "name": "First scenario",
+        "name": "",
         "description": "",
-        "id": "property-finder-qatar-and-uae;first-scenario",
-        "after": [
-          {
-            "result": {
-              "duration": 85191868,
-              "status": "passed"
-            },
-            "match": {
-              "location": "CucumberHooks.embedScreenshot(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 8256825241,
+              "duration": 2074224283,
               "status": "passed"
             },
             "line": 4,
-            "name": "I open the page url \"propertyfinder.qa\"",
+            "name": "I open the page url \"computer-db\"",
             "match": {
               "arguments": [
                 {
-                  "val": "propertyfinder.qa",
+                  "val": "computer-db",
                   "offset": 21
                 }
               ],
-              "location": "PropertyFinderStepDefs.open_url(String)"
+              "location": "DBStepDefs.open_url(String)"
             },
-            "keyword": "When "
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 13578069,
+              "duration": 347476909,
               "status": "passed"
             },
             "line": 5,
-            "name": "I validate the page title and URL \"propertyfinder.qa\"",
+            "name": "I validate the \"page title\" in home page",
             "match": {
               "arguments": [
                 {
-                  "val": "propertyfinder.qa",
-                  "offset": 35
+                  "val": "page title",
+                  "offset": 16
+                },
+                {
+                  "val": "home",
+                  "offset": 31
                 }
               ],
-              "location": "PropertyFinderStepDefs.validate_the_page_title_and_URL(String)"
+              "location": "DBStepDefs.validate_assertions(String,String)"
             },
             "keyword": "Then "
-          },
+          }
+        ]
+      },
+      {
+        "before": [
           {
             "result": {
-              "duration": 168637231,
+              "duration": 2417286540,
               "status": "passed"
             },
-            "line": 6,
-            "name": "I select \"Buy\" from \"Category\" field",
             "match": {
-              "arguments": [
-                {
-                  "val": "Buy",
-                  "offset": 10
-                },
-                {
-                  "val": "Category",
-                  "offset": 21
-                }
-              ],
-              "location": "PropertyFinderStepDefs.select_from_field(String,String)"
-            },
-            "keyword": "When "
-          },
+              "location": "CucumberHooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Create and Delete existing computer details",
+        "description": "",
+        "id": "crud---create,-read,-update-and-delete;create-and-delete-existing-computer-details",
+        "after": [
           {
             "result": {
-              "duration": 3076293791,
+              "duration": 98807936,
               "status": "passed"
             },
-            "line": 7,
-            "name": "I search \"Pearl\" in \"Location\" field",
             "match": {
-              "arguments": [
-                {
-                  "val": "Pearl",
-                  "offset": 10
-                },
-                {
-                  "val": "Location",
-                  "offset": 21
-                }
-              ],
-              "location": "PropertyFinderStepDefs.search_in_field(String,String)"
-            },
-            "keyword": "And "
-          },
+              "location": "CucumberHooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
           {
             "result": {
-              "duration": 243888398,
+              "duration": 888208879,
               "status": "passed"
             },
             "line": 8,
-            "name": "I select \"Villa\" from \"Property\" field",
+            "name": "I click on \"create new computer\" button from the home page",
             "match": {
               "arguments": [
                 {
-                  "val": "Villa",
-                  "offset": 10
+                  "val": "create new computer",
+                  "offset": 12
                 },
                 {
-                  "val": "Property",
-                  "offset": 23
+                  "val": "button",
+                  "offset": 33
+                },
+                {
+                  "val": "home",
+                  "offset": 49
                 }
               ],
-              "location": "PropertyFinderStepDefs.select_from_field(String,String)"
+              "location": "DBStepDefs.click_on_button(String,String,String)"
             },
-            "keyword": "And "
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 226181013,
+              "duration": 127177942,
               "status": "passed"
             },
             "line": 9,
-            "name": "I select \"3 BEDS\" from \"Minimum_Bedroom_Group\" field",
+            "name": "I validate the \"page title\" in create page",
             "match": {
               "arguments": [
                 {
-                  "val": "3 BEDS",
-                  "offset": 10
+                  "val": "page title",
+                  "offset": 16
                 },
                 {
-                  "val": "Minimum_Bedroom_Group",
-                  "offset": 24
+                  "val": "create",
+                  "offset": 31
                 }
               ],
-              "location": "PropertyFinderStepDefs.select_from_field(String,String)"
+              "location": "DBStepDefs.validate_assertions(String,String)"
             },
-            "keyword": "And "
+            "keyword": "Then "
           },
           {
             "result": {
-              "duration": 182093981,
+              "duration": 2307011789,
               "status": "passed"
             },
             "line": 10,
-            "name": "I select \"7 BEDS\" from \"Maximum_bedroom_Group\" field",
+            "name": "I create a new machine",
             "match": {
-              "arguments": [
-                {
-                  "val": "7 BEDS",
-                  "offset": 10
-                },
-                {
-                  "val": "Maximum_bedroom_Group",
-                  "offset": 24
-                }
-              ],
-              "location": "PropertyFinderStepDefs.select_from_field(String,String)"
+              "location": "DBStepDefs.create_new_machine()"
             },
-            "keyword": "And "
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 3327496044,
+              "duration": 984334779,
               "status": "passed"
             },
             "line": 11,
-            "name": "I click on \"search\" link",
+            "name": "I validate the \"newly created computer\" in filter page",
             "match": {
               "arguments": [
                 {
-                  "val": "search",
-                  "offset": 12
+                  "val": "newly created computer",
+                  "offset": 16
+                },
+                {
+                  "val": "filter",
+                  "offset": 43
                 }
               ],
-              "location": "PropertyFinderStepDefs.click_on_button(String)"
+              "location": "DBStepDefs.validate_assertions(String,String)"
             },
-            "keyword": "When "
+            "keyword": "Then "
           },
           {
             "result": {
-              "duration": 2689264252,
+              "duration": 443046435,
               "status": "passed"
             },
             "line": 12,
-            "name": "I select \"HighPrice\" from \"Sorting\" field",
+            "name": "I click on \"machine\" link from the home page",
             "match": {
               "arguments": [
                 {
-                  "val": "HighPrice",
-                  "offset": 10
+                  "val": "machine",
+                  "offset": 12
                 },
                 {
-                  "val": "Sorting",
-                  "offset": 27
+                  "val": "link",
+                  "offset": 21
+                },
+                {
+                  "val": "home",
+                  "offset": 35
                 }
               ],
-              "location": "PropertyFinderStepDefs.select_from_field(String,String)"
+              "location": "DBStepDefs.click_on_button(String,String,String)"
             },
-            "keyword": "And "
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 184189233,
+              "duration": 616855140,
               "status": "passed"
             },
             "line": 13,
-            "name": "I fetch all the prices of the listing and save it in csv file",
+            "name": "I click on \"delete this computer\" button from the create page",
             "match": {
-              "location": "PropertyFinderStepDefs.fetch_all_the_prices_of_the_listing_and_save_it_in_csv_file()"
+              "arguments": [
+                {
+                  "val": "delete this computer",
+                  "offset": 12
+                },
+                {
+                  "val": "button",
+                  "offset": 34
+                },
+                {
+                  "val": "create",
+                  "offset": 50
+                }
+              ],
+              "location": "DBStepDefs.click_on_button(String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 698867916,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I validate the \"deleted computer details\" in filter page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "deleted computer details",
+                  "offset": 16
+                },
+                {
+                  "val": "filter",
+                  "offset": 45
+                }
+              ],
+              "location": "DBStepDefs.validate_assertions(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 935181937,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I open the page url \"computer-db\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "computer-db",
+                  "offset": 21
+                }
+              ],
+              "location": "DBStepDefs.open_url(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 192933569,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I validate the \"page title\" in home page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "page title",
+                  "offset": 16
+                },
+                {
+                  "val": "home",
+                  "offset": 31
+                }
+              ],
+              "location": "DBStepDefs.validate_assertions(String,String)"
             },
             "keyword": "Then "
           }
@@ -236,7 +292,7 @@
         "before": [
           {
             "result": {
-              "duration": 1308330111,
+              "duration": 1643733968,
               "status": "passed"
             },
             "match": {
@@ -244,14 +300,14 @@
             }
           }
         ],
-        "line": 15,
-        "name": "Second scenario",
+        "line": 16,
+        "name": "Read and Update existing computer details",
         "description": "",
-        "id": "property-finder-qatar-and-uae;second-scenario",
+        "id": "crud---create,-read,-update-and-delete;read-and-update-existing-computer-details",
         "after": [
           {
             "result": {
-              "duration": 138132892,
+              "duration": 96741827,
               "status": "passed"
             },
             "match": {
@@ -264,335 +320,189 @@
         "steps": [
           {
             "result": {
-              "duration": 8189998303,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "I open the page url \"propertyfinder.ae\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "propertyfinder.ae",
-                  "offset": 21
-                }
-              ],
-              "location": "PropertyFinderStepDefs.open_url(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 14390526,
+              "duration": 540425736,
               "status": "passed"
             },
             "line": 17,
-            "name": "I validate the page title and URL \"propertyfinder.ae\"",
+            "name": "I click on \"create new computer\" button from the home page",
             "match": {
               "arguments": [
                 {
-                  "val": "propertyfinder.ae",
-                  "offset": 35
+                  "val": "create new computer",
+                  "offset": 12
+                },
+                {
+                  "val": "button",
+                  "offset": 33
+                },
+                {
+                  "val": "home",
+                  "offset": 49
                 }
               ],
-              "location": "PropertyFinderStepDefs.validate_the_page_title_and_URL(String)"
+              "location": "DBStepDefs.click_on_button(String,String,String)"
             },
-            "keyword": "Then "
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 1900271804,
+              "duration": 77247284,
               "status": "passed"
             },
             "line": 18,
-            "name": "I click on \"Find agent\" link",
+            "name": "I validate the \"page title\" in create page",
             "match": {
               "arguments": [
                 {
-                  "val": "Find agent",
-                  "offset": 12
+                  "val": "page title",
+                  "offset": 16
+                },
+                {
+                  "val": "create",
+                  "offset": 31
                 }
               ],
-              "location": "PropertyFinderStepDefs.click_on_button(String)"
+              "location": "DBStepDefs.validate_assertions(String,String)"
             },
-            "keyword": "When "
+            "keyword": "Then "
           },
           {
             "result": {
-              "duration": 345424489,
+              "duration": 2101762628,
               "status": "passed"
             },
             "line": 19,
-            "name": "I filter Hindi English Arabic from Languages field",
+            "name": "I create a new machine",
             "match": {
-              "location": "PropertyFinderStepDefs.filter_Hindi_English_Arabic_from_Languages_field()"
+              "location": "DBStepDefs.create_new_machine()"
             },
-            "keyword": "And "
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 91145306,
+              "duration": 956568576,
               "status": "passed"
             },
             "line": 20,
-            "name": "I click on \"searchFA\" link",
+            "name": "I validate the \"newly created computer\" in filter page",
             "match": {
               "arguments": [
                 {
-                  "val": "searchFA",
-                  "offset": 12
+                  "val": "newly created computer",
+                  "offset": 16
+                },
+                {
+                  "val": "filter",
+                  "offset": 43
                 }
               ],
-              "location": "PropertyFinderStepDefs.click_on_button(String)"
+              "location": "DBStepDefs.validate_assertions(String,String)"
             },
-            "keyword": "When "
+            "keyword": "Then "
           },
           {
             "result": {
-              "duration": 3503978091,
+              "duration": 641131407,
               "status": "passed"
             },
             "line": 21,
-            "name": "I get the total number of \"Combined\" agents",
+            "name": "I click on \"machine\" link from the home page",
             "match": {
               "arguments": [
                 {
-                  "val": "Combined",
-                  "offset": 27
-                }
-              ],
-              "location": "PropertyFinderStepDefs.get_the_total_number_of_agents(String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 166252829,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "I select \"India\" from \"Nationality\" field",
-            "match": {
-              "arguments": [
-                {
-                  "val": "India",
-                  "offset": 10
+                  "val": "machine",
+                  "offset": 12
                 },
                 {
-                  "val": "Nationality",
-                  "offset": 23
-                }
-              ],
-              "location": "PropertyFinderStepDefs.select_from_field(String,String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3026631189,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "I get the total number of \"Indian\" agents",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Indian",
-                  "offset": 27
-                }
-              ],
-              "location": "PropertyFinderStepDefs.get_the_total_number_of_agents(String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 111435,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "I validate the current agents to be in lesser number than previous",
-            "match": {
-              "location": "PropertyFinderStepDefs.validate_the_current_agents_to_be_in_lesser_number_than_previous()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 1317477983,
-              "status": "passed"
-            },
-            "match": {
-              "location": "CucumberHooks.openBrowser()"
-            }
-          }
-        ],
-        "line": 26,
-        "name": "Third scenario",
-        "description": "",
-        "id": "property-finder-qatar-and-uae;third-scenario",
-        "after": [
-          {
-            "result": {
-              "duration": 132419933,
-              "status": "passed"
-            },
-            "match": {
-              "location": "CucumberHooks.embedScreenshot(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 9669484442,
-              "status": "passed"
-            },
-            "line": 27,
-            "name": "I open the page url \"propertyfinder.ae\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "propertyfinder.ae",
+                  "val": "link",
                   "offset": 21
-                }
-              ],
-              "location": "PropertyFinderStepDefs.open_url(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 10484127,
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "I validate the page title and URL \"propertyfinder.ae\"",
-            "match": {
-              "arguments": [
+                },
                 {
-                  "val": "propertyfinder.ae",
+                  "val": "home",
                   "offset": 35
                 }
               ],
-              "location": "PropertyFinderStepDefs.validate_the_page_title_and_URL(String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1817325664,
-              "status": "passed"
-            },
-            "line": 29,
-            "name": "I click on \"Find agent\" link",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Find agent",
-                  "offset": 12
-                }
-              ],
-              "location": "PropertyFinderStepDefs.click_on_button(String)"
+              "location": "DBStepDefs.click_on_button(String,String,String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 89535785,
+              "duration": 238319029,
               "status": "passed"
             },
-            "line": 30,
-            "name": "I click on \"First agent\" link",
+            "line": 22,
+            "name": "I enter \"updated name\" in the \"Computer update name\" field",
             "match": {
               "arguments": [
                 {
-                  "val": "First agent",
-                  "offset": 12
+                  "val": "updated name",
+                  "offset": 9
+                },
+                {
+                  "val": "Computer update name",
+                  "offset": 31
                 }
               ],
-              "location": "PropertyFinderStepDefs.click_on_button(String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 3465736797,
-              "status": "passed"
-            },
-            "line": 31,
-            "name": "I capture the First Agent details in a text file",
-            "match": {
-              "location": "PropertyFinderStepDefs.capture_the_First_Agent_details_in_a_text_file()"
+              "location": "DBStepDefs.enter_value_in_field(String,String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 2408326191,
+              "duration": 1144833292,
               "status": "passed"
             },
-            "line": 32,
-            "name": "I capture screenshot of the page \"before\" changing language",
+            "line": 23,
+            "name": "I click on \"save this computer\" button from the create page",
             "match": {
               "arguments": [
                 {
-                  "val": "before",
-                  "offset": 34
-                }
-              ],
-              "location": "PropertyFinderStepDefs.capture_screenshot_of_the_page_changing_language(String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 2401809134,
-              "status": "passed"
-            },
-            "line": 33,
-            "name": "I click on \"Arabic language\" link",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Arabic language",
+                  "val": "save this computer",
                   "offset": 12
+                },
+                {
+                  "val": "button",
+                  "offset": 32
+                },
+                {
+                  "val": "create",
+                  "offset": 48
                 }
               ],
-              "location": "PropertyFinderStepDefs.click_on_button(String)"
+              "location": "DBStepDefs.click_on_button(String,String,String)"
             },
-            "keyword": "Then "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 2256234160,
+              "duration": 883179357,
               "status": "passed"
             },
-            "line": 34,
-            "name": "I capture screenshot of the page \"after\" changing language",
+            "line": 24,
+            "name": "I validate the \"updated computer details\" in filter page",
             "match": {
               "arguments": [
                 {
-                  "val": "after",
-                  "offset": 34
+                  "val": "updated computer details",
+                  "offset": 16
+                },
+                {
+                  "val": "filter",
+                  "offset": 45
                 }
               ],
-              "location": "PropertyFinderStepDefs.capture_screenshot_of_the_page_changing_language(String)"
+              "location": "DBStepDefs.validate_assertions(String,String)"
             },
             "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "Property Finder Qatar and UAE",
+    "name": "CRUD - Create, Read, Update and Delete",
     "description": "",
-    "id": "property-finder-qatar-and-uae",
+    "id": "crud---create,-read,-update-and-delete",
     "keyword": "Feature",
-    "uri": "src/resources/features/scenarioA.feature"
+    "uri": "src/resources/features/Backbase.feature"
   }
 ]
