@@ -36,3 +36,8 @@ html and failure_screenshots
 
 json, xml, csv, txt, screenshots
 `./results`
+
+Project Structure 
+=============
+
+![alt text](http://i.imgur.com/ZanrxYc.png)
