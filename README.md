@@ -41,3 +41,8 @@ Project Structure
 =============
 
 ![alt text](http://i.imgur.com/ZanrxYc.png)
+
+See Wiki for Basic Environment setup
+=============
+
+https://github.com/prashanth-sams/backbase/wiki/Enviroment-Setup
